@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Weather Network</title>
+</head>
+<body>
+<!-- Header-->
+<header class="jumbotron">
+    <h1 class="display">Weather Dashboard</h1>
+</header>
+<div class="row">
+<!--Search City-->
+<div id="searchCity" class="col-lg-3 col-md-12 col-sm-12">
+    <input type="text" id="cityLocation" placeholder="Enter City" ></input> 
+    <button class="submit-btn" type="button" id="search-button"><i
+        class="fas fa-search"></i></button>
+</div>
+<!--Searched Cities-->
+<div class="search-history">
+    <ul class="city-list"></ul>
+</div>
+<!--Weather Dashboard-->
+<div id="dashboard" class="col-lg-9 col-md-12 col-sm-12">
+    <!--Search City 5 Day Weather Forcast-->
+    <div id="city-box">
+        <h2 id=cityid></h2>
+        <p id="temperature"></p>
+        <p id="humidity"></p>
+        <p id="windspeed"></p>
+        <p id="uvindex"></p>
+    </div>
+    <!--5 day weather forcast-->
+    <h4 id=five-day-forecast></h4>
+    <div class="five-day-row col-lg-2 col-md-12 col-sm-12">
+        <!--5 day forecast information here-->
+    </div>
+</div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="./javascript.js"></script>
+</body>
+</html>
