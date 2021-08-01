@@ -1,6 +1,20 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+.navbar-brand{
+  font-size: 40px;
+  padding: 0px;
+}
+
+.yellowBtn{
+  background-color: yellow;
+}
+
+.orangeBtn{
+  background-color:orange;
+}
+
+.violetBtn{
+  background-color: violet;
+}
+
+#historylist li:hover {
+  font-weight: bold;
 }
